@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Reimagining Consulting</title>
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,100 +13,115 @@
 <nav>
   <div class="nav-logo">Reimagining Consulting</div>
   <ul class="nav-links">
-    <li><a href="index.html">Services</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="#">Case Studies</a></li>
-    <li><a href="#">Insights</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#approach">Approach</a></li>
   </ul>
-  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <a href="#contact" class="nav-cta">Schedule a Call</a>
+  <button onclick="showPopup('email')" class="nav-cta" style="cursor:pointer;background:none;">Contact</button>
 </nav>
 
 <!-- HERO -->
-<div class="hero" id="hero">
+<section class="hero">
   <div class="hero-left">
-    <p class="hero-eyebrow fade-in">Founder &amp; Principal Consultant</p>
-    <h1 class="hero-name fade-in delay-1">Wei-Jing Lei</h1>
-    <p class="hero-title fade-in delay-2">25 Years. Fortune 50. Now Working for You.</p>
-    <div class="hero-divider fade-in delay-3"></div>
-    <p class="hero-tagline fade-in delay-4">Enterprise-grade project management and analytics — scaled for the businesses that need it most.</p>
+    <div class="hero-eyebrow">For Growing Companies</div>
+    <h1 class="hero-name">Reimagining Consulting</h1>
+    <p class="hero-title">Operations. Analytics. Accountability.</p>
   </div>
   <div class="hero-right">
-    <div class="stat-grid fade-in delay-1">
-      <div class="stat-item">
-        <div class="stat-num">25<span>+</span></div>
-        <div class="stat-label">Years of enterprise experience</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">F<span>50</span></div>
-        <div class="stat-label">Fortune 50 companies served</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">2</div>
-        <div class="stat-label">Focused industry verticals</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">$<span>0</span></div>
-        <div class="stat-label">Big-firm overhead passed to you</div>
-      </div>
-    </div>
-    <p class="hero-intro fade-in delay-2">
-      I built my career solving <strong>complex operational problems</strong> inside some of the largest companies in the world. Now I bring those same frameworks — without the enterprise price tag — to <strong>financial services and utility firms</strong> ready to run at a higher level.
+    <p class="hero-bio">
+      I work with <strong>small and mid-size businesses</strong> that have outgrown their informal systems. You've built something real, but execution is breaking down. Your owner is a bottleneck. Your numbers aren't clear. Your growth has stalled or is unsustainable.
+    </p>
+    <p class="hero-bio">
+      I fix the operational and strategic problems that keep growing companies from becoming great ones.
     </p>
   </div>
-</div>
+</section>
 
-<!-- STORY -->
-<section class="story" id="story">
-  <div class="story-col">
-    <span class="section-label">Background</span>
-    <h2 class="section-heading">Built inside the machine. Now working outside of it.</h2>
-    <p class="body-text">
-      For 25 years, I led <strong>project management and business analytics initiatives</strong> at Fortune 50 organizations — the kind of environments where execution discipline, data integrity, and operational rigor aren't optional. They're survival.
-    </p>
-    <p class="body-text">
-      I managed programs with nine-figure budgets, built analytics infrastructures from the ground up, and guided organizations through the kind of complex transformations that most companies attempt once and never fully recover from.
-    </p>
-    <p class="body-text">
-      What I noticed, year after year, was that smaller companies — particularly in <strong>financial services and utilities</strong> — were fighting the same battles with a fraction of the resources. Smart leadership teams. Real ambition. But without the operational infrastructure to execute at the level they were capable of.
-    </p>
+<!-- PROBLEMS TO SOLVE -->
+<section class="problems-section">
+  <div class="problems-header">
+    <span class="section-label">What Companies Need</span>
+    <h2>The problems you need to solve to grow</h2>
+    <p>Growing companies face predictable challenges. These aren't unique to you — they're the cost of scaling. But most owners tackle them alone, without a framework or peers who understand the real constraints.</p>
   </div>
-  <div class="story-divider"></div>
-  <div class="story-col">
-    <span class="section-label">The why</span>
-    <h2 class="section-heading">The gap no big firm wants to fill.</h2>
-    <p class="body-text">
-      Large consulting firms don't want your business if you're a $200M credit union or a regional utility with 50,000 customers. You're too small for their model. Too complex for a generalist freelancer. And too important to your community to settle for mediocre execution.
-    </p>
-    <p class="body-text">
-      <strong>That's exactly where I work.</strong> Reimagining Consulting exists to give growing financial services firms and regional utilities access to the same caliber of project management and analytics thinking that Fortune 50 organizations have taken for granted for decades.
-    </p>
-    <p class="body-text">
-      No junior associates doing the work. No bloated methodologies. Just direct, senior-level engagement — and a genuine commitment to results you can measure.
-    </p>
+
+  <div class="problems-grid">
+    <div class="problem-card">
+      <div class="problem-icon">💸</div>
+      <h3 class="problem-title">Financial Clarity</h3>
+      <p class="problem-description">You're making decisions on gut and lagging data. The real need: knowing where money goes, why it goes there, and predicting shortfalls before they threaten survival.</p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon">📊</div>
+      <h3 class="problem-title">Predictable Growth</h3>
+      <p class="problem-description">Customer acquisition feels random. One slow month threatens everything. The problem isn't "we need more marketing" — it's that you have no repeatable system to bring in customers consistently.</p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon">⏰</div>
+      <h3 class="problem-title">Owner's Time</h3>
+      <p class="problem-description">You're doing everything: sales, operations, HR, finance. The business can't grow faster than your bandwidth. You need systems and people that let the business run without you in every decision.</p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon">⚙️</div>
+      <h3 class="problem-title">Scalable Processes</h3>
+      <p class="problem-description">What worked at 5 people breaks at 20. Informal systems create chaos — things fall through cracks, quality becomes inconsistent, everyone firefights constantly.</p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon">🔗</div>
+      <h3 class="problem-title">Technology Integration</h3>
+      <p class="problem-description">You're stitched together with 10–20 disconnected tools. The real cost isn't software fees — it's time switching systems and decisions made on bad data.</p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon">👥</div>
+      <h3 class="problem-title">People Problems</h3>
+      <p class="problem-description">Hiring, managing, developing, and keeping talented people is relentless. High turnover. Disengagement. Key people burning out with no succession plan in place.</p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon">🧭</div>
+      <h3 class="problem-title">Strategic Direction</h3>
+      <p class="problem-description">With limited resources, every bet matters enormously. The problem isn't lack of ideas — it's prioritization. You need clarity on what to double down on and what to kill.</p>
+    </div>
+
+    <div class="problem-card">
+      <div class="problem-icon">🧠</div>
+      <h3 class="problem-title">Decision Confidence</h3>
+      <p class="problem-description">High-stakes decisions daily with incomplete information. No board to consult. Real personal financial risk. You need trusted frameworks and peers, not isolation.</p>
+    </div>
+  </div>
+
+  <div style="max-width: 1200px; margin: 4rem auto 0; position: relative; z-index: 1;">
+    <div class="root-cause">
+      <div class="root-cause-title">The Three Root Causes</div>
+      <ul class="root-cause-list">
+        <li><strong>No systems</strong> — everything depends on people (usually you) instead of documented processes</li>
+        <li><strong>No visibility</strong> — decisions made without reliable data on finances, customers, or team performance</li>
+        <li><strong>No bandwidth</strong> — you're too deep in day-to-day work to think strategically about the business itself</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <!-- EXPERTISE -->
 <section class="expertise" id="expertise">
-  <span class="section-label">What I bring</span>
-  <h2 class="section-heading">Three disciplines. One firm. Zero fluff.</h2>
-  <p class="expertise-intro">Every engagement draws on deep expertise built over 25 years — not a generalist toolkit assembled last year.</p>
+  <div>
+    <span class="section-label">What I Deliver</span>
+    <h2 class="section-heading">Three core areas of focus</h2>
+    <p class="body-text">I work at the intersection of operations, analytics, and leadership — the three levers that actually move the needle for growing companies.</p>
+  </div>
+
   <div class="expertise-grid">
     <div class="expertise-item">
       <div class="exp-icon"></div>
-      <h3 class="exp-title">Project Management</h3>
-      <p class="exp-body">From system migrations to regulatory initiatives, I lead projects with the rigor of enterprise PMOs — clear governance, proactive risk management, and accountability structures that actually hold.</p>
+      <h3 class="exp-title">Financial Infrastructure</h3>
+      <p class="exp-body">I build analytics frameworks that turn your operational data into decisions — not dashboards that collect dust. KPIs, reporting infrastructure, and the insight layer your leadership team needs.</p>
     </div>
-    <div class="expertise-item">
-      <div class="exp-icon"></div>
-      <h3 class="exp-title">Business Analytics</h3>
-      <p class="exp-body">I build analytics frameworks that turn your operational data into decisions — not dashboards that look impressive but collect dust. KPIs, reporting infrastructure, and the insight layer your leadership team needs.</p>
-    </div>
+
     <div class="expertise-item">
       <div class="exp-icon"></div>
       <h3 class="exp-title">Operational Improvement</h3>
@@ -122,7 +133,7 @@
 <!-- INDUSTRIES -->
 <section class="industries" id="industries">
   <span class="section-label">Sectors</span>
-  <h2 class="section-heading">Depth over breadth. Two industries, done right.</h2>
+  <h2 class="section-heading" style="color: var(--navy);">Depth over breadth. Two industries, done right.</h2>
   <div class="industries-grid">
     <div class="industry-card">
       <span class="industry-tag">Financial Services</span>
@@ -136,6 +147,7 @@
         <li>Fractional COO for scaling firms</li>
       </ul>
     </div>
+
     <div class="industry-card">
       <span class="industry-tag">Utilities</span>
       <h3 class="industry-name">Regional Utilities, Co-ops &amp; Infrastructure Firms</h3>
@@ -154,10 +166,11 @@
 <!-- APPROACH -->
 <section class="approach" id="approach">
   <div>
-    <span class="section-label">How I work</span>
+    <span class="section-label">How I Work</span>
     <h2 class="section-heading">A diagnostic-first model built for trust.</h2>
     <p class="body-text">Every engagement starts with understanding — not selling. I don't propose solutions before I understand the problem.</p>
   </div>
+
   <div class="approach-steps">
     <div class="step">
       <div class="step-num">01</div>
@@ -166,6 +179,7 @@
         <div class="step-body">A candid 30-minute conversation about where you are, where you're trying to go, and where execution is breaking down. No pitch deck.</div>
       </div>
     </div>
+
     <div class="step">
       <div class="step-num">02</div>
       <div class="step-content">
@@ -173,6 +187,7 @@
         <div class="step-body">A structured assessment of your project management, analytics, and operations. Deliverable: a prioritized action plan with clear ROI tied to each recommendation.</div>
       </div>
     </div>
+
     <div class="step">
       <div class="step-num">03</div>
       <div class="step-content">
@@ -180,6 +195,7 @@
         <div class="step-body">We scope an engagement that fits your priorities — project-based, ongoing retainer, or fractional COO. No bloated contracts. No junior staff.</div>
       </div>
     </div>
+
     <div class="step">
       <div class="step-num">04</div>
       <div class="step-content">
@@ -191,23 +207,42 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section" id="contact">
+<section class="cta-section">
   <div class="cta-inner">
     <span class="section-label">Work together</span>
     <h2 class="cta-heading">Ready to run your business like a Fortune 50?</h2>
     <p class="cta-body">Let's start with a conversation. Tell me what you're working on — and I'll tell you honestly whether I can help.</p>
-    <a href="mailto:hello@reimaginingconsulting.com" class="cta-btn">Schedule a Discovery Call</a>
+    <button onclick="showPopup('phone')" class="cta-btn" style="cursor:pointer;border:none;">Schedule a Discovery Call</button>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Reimagining Consulting</div>
-  <div class="footer-copy">&copy; <span id="footer-year"></span> Reimagining Consulting. All rights reserved.</div>
+  <div class="footer-copy">&copy; 2026 Reimagining Consulting. All rights reserved.</div>
 </footer>
 
-<!-- Script -->
-<script src="script.js"></script>
+<!-- POPUPS -->
+<div id="popup-email" class="popup-overlay" onclick="closeIfOverlay(event, 'email')">
+  <div class="popup-box">
+    <button class="popup-close" onclick="hidePopup('email')">✕</button>
+    <div class="popup-icon">✉️</div>
+    <div class="popup-label">Email Us</div>
+    <div class="popup-value">info@reimaginingconsulting.com</div>
+    <a href="mailto:info@reimaginingconsulting.com" class="popup-action">Open Email</a>
+  </div>
+</div>
 
+<div id="popup-phone" class="popup-overlay" onclick="closeIfOverlay(event, 'phone')">
+  <div class="popup-box">
+    <button class="popup-close" onclick="hidePopup('phone')">✕</button>
+    <div class="popup-icon">📞</div>
+    <div class="popup-label">Call or Text</div>
+    <div class="popup-value">267-293-9628</div>
+    <a href="tel:+12672939628" class="popup-action">Call Now</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
